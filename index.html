@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishkruti Waghmare | AI Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <header class="main-header">
+        <h1>Ishkruti Waghmare</h1>
+        <p class="subtitle">AI Developer | UGC NET & GATE Qualified</p>
+        
+        <nav class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'about')">About Me</button>
+            <button class="tab-btn" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="tab-content active">
+            <div class="card">
+                <h2>Education</h2>
+                <div class="item">
+                    <div class="flex-row">
+                        <strong>Dual Degree B.Tech + M.Tech (AI & Data Science)</strong>
+                        <span class="badge">2025</span>
+                    </div>
+                    <p>Devi Ahilya Vishwavidyalaya | 8.14 CGPA</p>
+                </div>
+                <h2>Technical Toolkit</h2>
+                <div class="skills-flex">
+                    <span>Python</span> <span>TensorFlow</span> <span>MySQL</span> <span>SQL Server</span> 
+                    <span>Power Apps</span> <span>Pandas</span> <span>Numpy</span> <span>NLTK</span>
+                </div>
+                <h2>Qualifications</h2>
+                <div class="item">
+                    <div class="flex-row">
+                        <strong>UGC NET Qualified</strong>
+                        <span class="badge">2025</span>
+                    </div>
+                    <p class="xyz">Computer Science</p>
+                    <div class="flex-row">
+                        <strong>GATE Qualified</strong>
+                        <span class="badge">2026</span>
+                    </div>
+                    <p>Data Science and Artificial Intelligence</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="tab-content">
+            <div class="card">
+                <h2>Internships</h2>
+                <div class="item">
+                    <div class="flex-row">
+                        <strong>Trainee Engineer | Ascentt AlTek</strong>
+                        <span class="badge">2025</span>
+                    </div>
+                    <ul>
+                        <li>Implemented predictive modeling using <strong>DeepVARHierarchical</strong>.</li>
+                        <li>Developed CNC EDM Python-based synthetic data generator with <strong>Flask</strong>.</li>
+                        <li>Built asset management systems via <strong>Power Apps</strong>.</li>
+                        <li>Designed SQL schema & paginated reports using <strong>SQL Server & Power BI Paginated Report Builder</strong>.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="flex-row">
+                        <strong>AI & ML Intern | MPSEDC</strong>
+                        <span class="badge">2024</span>
+                    </div>
+                    <ul>
+                        <li>Investigated the accuracy of a <strong>Convolutional Neural Network (CNN)</strong> model with and without data augmentation for spatial data analysis on limited GIS datasets.</li>
+                        <li>Analyzed the impact of various training set sizes (50%, 60%, 70%) on model performance using limited classified data.</li>
+                        <li>Developed and tested the <strong>VGG16</strong> model to compare accuracy benchmarks on GIS data.</li>
+                        <li>Utilized <strong>Python, TensorFlow, and Keras</strong> for comprehensive model development and data processing.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-content">
+            <div class="card">
+                <div class="item">
+                    <div class="flex-row">
+                        <h3>AIUTO | NLP Rescue Bot</h3>
+                        <span class="badge">Present</span>
+                    </div>
+                    <ul>
+                        <li>Leveraging <strong>Natural Language Processing (NLP)</strong> to provide empathetic, unprejudiced support for individuals in distress.</li>
+                        <li>Designed to identify vulnerable situations and connect users to professional assistance.</li>
+                        <li>Automates time-consuming psychotherapeutic interventions that do not require complex therapeutic competencies.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="flex-row">
+                        <h3>SublimeSense | Humor Detection Model</h3>
+                        <span class="badge">2024</span>
+                    </div>
+                    <ul>
+                        <li>Developed a machine learning model to detect humor in text using <strong>text classification</strong> and <strong>sentiment analysis</strong>.</li>
+                        <li>Processed a large-scale dataset of <strong>194,000+ samples</strong>.</li>
+                        <li>Achieved <strong>88.8% accuracy</strong> and a macro F1-score of 0.87 using fine-tuned logistic regression.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="mailto:waghmareishkruti@gmail.com">Contact</a> • 
+        <a href="https://linktr.ee/ishkrutiwaghmare" target="_blank">Linktree</a>
+    </footer>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].classList.remove("active");
+        }
+        tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>
