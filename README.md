@@ -4,7 +4,7 @@ Project URL :
 [https://ishkruti.github.io/portfolio/](https://ishkruti.github.io/portfolio/)
 
 Project Challenge : 
-This project was built as part of a challenge from [roadmap.sh](https://roadmap.sh/projects/portfolio-website).
+This project was built as part of a challenge from [roadmap.sh](https://roadmap.sh/projects/portfolio-website)
 
 Tech Stack : 
 * HTML5: Structured using semantic elements for better accessibility.
